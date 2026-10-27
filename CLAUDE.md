@@ -11,7 +11,7 @@
 - Công ty TNHH Kỹ thuật ABA, phân phối vật liệu làm kín công nghiệp (phớt, gioăng thủy lực).
 - Địa chỉ (dùng đúng một cách viết ở mọi nơi): Số 2 phố Ái Mộ, Tổ 8 Phường Bồ Đề, Thành Phố Hà Nội
 - Điện thoại: 024.3873.8055 / 024.3873.8058. Call/Zalo: 0984.439.151. Email: namktaba@gmail.com (chỉ dùng Gmail).
-- Đại lý ủy quyền: NOK (chứng thư ghi rõ không gồm mảng ô tô), Freudenberg, Trelleborg, NAK (chưa có ảnh chứng thư NAK).
+- Đại lý ủy quyền: NOK (chứng thư ghi rõ không gồm mảng ô tô; dòng này đã bỏ khỏi web theo ý chủ web), Freudenberg, Trelleborg, NAK (chưa có ảnh chứng thư NAK).
 - Tên miền: kythuataba.vn, DNS đang ở VNPT, đang chạy WordPress (theme Flatsome).
 - Web WordPress cũ **đã bị chèn link cờ bạc ẩn** (casino) trong đoạn giới thiệu. Không được chép các link đó sang web mới; cần nhắc dọn mã độc và sao lưu sạch trước khi gắn tên miền.
 
@@ -28,8 +28,8 @@ Website tĩnh HTML/CSS/JS thuần, không build. **Một trang dài** (`public/i
 - Bám nhận diện web cũ: thanh menu xanh dương, nút cam (#f58220), banner navy; logo ABA màu #00b0f0.
 - **Thanh menu duy nhất** (không còn header trắng): logo = nút "Trang chủ" đứng đầu, rồi 5 mục (Giới thiệu, Chứng thư, Sản phẩm, Tư vấn kỹ thuật, Liên hệ), cuối thanh là "Hỗ trợ liên hệ: 024.3873.8055 / 8058" và "Call/Zalo: 0984.439.151". Máy tính: thanh dính đầu màn hình. Điện thoại: hàng trên là logo + số điện thoại, hàng dưới là menu, không dính.
 - Thang cỡ chữ gồm 6 bậc (biến `--fs-xs/sm/base/lg/xl/2xl` trong CSS). Không đặt cỡ chữ lẻ ngoài thang.
-- Banner Giới thiệu: đoạn giới thiệu do người dùng viết + khung "Đại lý ủy quyền" (tên NOK, Freudenberg, Trelleborg bấm được ra web hãng; NAK chưa có link). Khung này không ghi "không gồm mảng ô tô" (dòng đó chỉ còn dưới ảnh chứng thư NOK).
-- Dải số liệu: 10.000 size tồn kho / 4 hãng đại lý ủy quyền / Từ 2012 Kinh nghiệm (người dùng đã chốt giữ nguyên).
+- Banner Giới thiệu: đoạn giới thiệu do người dùng viết + khung "Đại lý ủy quyền" (tên NOK, Freudenberg, Trelleborg bấm được ra web hãng; NAK chưa có link). Chữ "không gồm mảng ô tô" đã bỏ hoàn toàn khỏi web.
+- Dải số liệu: ≈ 10.000 size tồn kho / >10 hãng kinh doanh / Từ 2012 Kinh nghiệm (người dùng đã chốt giữ nguyên).
 - Không có nút "Yêu cầu báo giá" nào ngoài form ở mục Liên hệ; không có ô tìm kiếm; không có mục "Hình ảnh" riêng.
 - Không dùng thư viện ngoài, không dùng font tải từ ngoài (dùng font hệ thống); ảnh phải nằm trong `images/`.
 - Giữ chữ tiếng Việt có dấu.
