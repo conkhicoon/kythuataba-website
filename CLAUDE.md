@@ -17,10 +17,12 @@
 
 ## Cấu trúc dự án
 Website tĩnh HTML/CSS/JS thuần, không build. **Một trang dài** (`public/index.html`), các mục xếp từ trên xuống: Giới thiệu (`#gioi-thieu`) → Chứng thư (`#chung-thu`) → Sản phẩm (`#san-pham`) → Tư vấn kỹ thuật + Từ khóa (`#tu-van`) → Liên hệ + form báo giá (`#lien-he`).
+- Mục Tư vấn kỹ thuật không có dòng giới thiệu dưới tiêu đề. "Từ khóa" là tiêu đề cùng cỡ với "Tư vấn kỹ thuật", bên dưới là **một khung duy nhất** (class `kwbox`) chứa 17 nhóm danh mục do chủ web cung cấp (tên nhóm viết hoa, tên tiếng Anh, các loại con). Dãy từ khóa ngắn cũ và chữ "Bao gồm:" đã bỏ.
+- Mục Liên hệ: hai khung cùng chiều cao (form báo giá | Thông tin liên hệ có tên công ty màu xanh, các dòng địa chỉ, điện thoại, Call/Zalo, email chia đều).
 - `public/404.html`, `public/css/style.css`, `public/js/main.js` (lightbox chứng thư, tô mục menu khi cuộn, form `mailto:`).
 - `public/images/`: `aba-logo.png` (logo trong suốt, dùng trên menu), `aba-logo.jpg` (logo nền trắng, dùng cho og:image), ảnh chứng thư, ảnh sản phẩm `aba-sp-*.jpg` (thẻ đang dùng: 10, 5, 8, 9, 7; ảnh 1, 2, 3, 4, 6 hiện không hiển thị).
 - `sitemap.xml` (chỉ còn trang `/`), `robots.txt`, `_headers`, `_redirects` (đưa `/chung-thu`, `/san-pham`, `/tu-van-ky-thuat`, `/lien-he` về mục tương ứng; chưa thử trên Cloudflare).
-- HTML được sinh bằng script ngoài kho; muốn sửa nội dung thì sửa thẳng file `.html` và `css/style.css`.
+- HTML từng được sinh bằng script ngoài kho; từ nay **sửa thẳng** `public/index.html` và `public/css/style.css`.
 
 ## Giao diện đã chốt
 - Bám nhận diện web cũ: thanh menu xanh dương, nút cam (#f58220), banner navy; logo ABA màu #00b0f0.
@@ -35,6 +37,7 @@ Website tĩnh HTML/CSS/JS thuần, không build. **Một trang dài** (`public/i
 ## Triển khai
 - Repo GitHub: `conkhicoon/kythuataba-website` (public). Cloudflare đã nối repo, **tự deploy khi có commit lên nhánh main**.
 - Dự án dạng **Workers (static assets)**, không phải Pages. Thư mục xuất bản là `public`. Địa chỉ thử: `https://kythuataba-website.ngochung-ktaba.workers.dev`.
+- Ngày 27/10/2026: web một trang dài đã đưa lên nhánh `main` (đợt 1 dựng lại toàn bộ, đợt 2 cập nhật Từ khóa, Liên hệ). Cần kiểm tra lại web thử trên workers.dev và các địa chỉ chuyển hướng `_redirects`.
 - Chưa gắn tên miền. Kế hoạch: thêm kythuataba.vn vào Cloudflare, đổi nameserver ở VNPT sang Cloudflare, xóa bản ghi A/CNAME cũ trỏ vào hosting WordPress, rồi Settings → Domains & Routes → Add → Custom Domain cho `kythuataba.vn` và `www`. **Trước khi gắn tên miền phải sao lưu WordPress.**
 - `_headers` đặt ảnh `immutable` 1 năm: khi đổi ảnh **phải đổi tên file** (không ghi đè cùng tên), nếu không khách cũ vẫn thấy ảnh cũ.
 - README.md còn ghi "Cloudflare Pages" và cấu trúc nhiều trang, cần sửa lại khi đưa lên.
