@@ -172,7 +172,7 @@ h2+.tv{margin-top:26px}
 .info .rows p{margin:0;display:flex;align-items:center;padding-block:12px;border-top:1px solid var(--line);color:var(--ink);font-size:var(--fs-base)}
 /* Từ khóa: toàn bộ danh mục nằm trong một khung */
 .kw-title{margin-top:56px}
-.kwbox{margin-top:18px;background:var(--surface);border:1px solid var(--line);padding:24px}
+.kwbox{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--blue);padding:24px}
 .kw{columns:3 260px;column-gap:36px;column-rule:1px solid var(--line)}
 .kw article{break-inside:avoid;margin:0 0 24px}
 .kw h4{margin:0;font-size:var(--fs-base);line-height:1.35;color:var(--head)}
