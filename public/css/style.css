@@ -160,3 +160,25 @@ footer .copy{margin-top:10px;opacity:.75}
 @media (max-width:460px){.hot b span.l{display:block}.hot{gap:8px}.nav .logo{padding-inline:max(12px,env(safe-area-inset-left,0px)) 8px}.nav .logo img{height:46px}}
 @media (max-width:340px){.hot i{display:none}.nav .links a{font-size:var(--fs-xs);padding:11px 5px}}
 @media (max-width:420px){.stats b{font-size:var(--fs-lg)}}
+h2+.tv{margin-top:26px}
+/* Mục Liên hệ: hai khung cùng chiều cao, đầu cột thẳng hàng */
+.ct{align-items:stretch}
+.card.form,.card.info{padding:24px}
+.card.info{display:flex;flex-direction:column}
+.info h3{margin-bottom:10px}
+.info .name{margin:0 0 18px;line-height:1.2}
+.info .rows{flex:1;display:grid;grid-auto-rows:1fr}
+.info .rows span{text-wrap:balance}
+.info .rows p{margin:0;display:flex;align-items:center;padding-block:12px;border-top:1px solid var(--line);color:var(--ink);font-size:var(--fs-base)}
+/* Từ khóa: toàn bộ danh mục nằm trong một khung */
+.kw-title{margin-top:56px}
+.kwbox{margin-top:18px;background:var(--surface);border:1px solid var(--line);padding:24px}
+.kw{columns:3 260px;column-gap:36px;column-rule:1px solid var(--line)}
+.kw article{break-inside:avoid;margin:0 0 24px}
+.kw h4{margin:0;font-size:var(--fs-base);line-height:1.35;color:var(--head)}
+.kw .en{display:block;margin-top:3px;color:var(--mute);font-size:var(--fs-sm)}
+.kw ul{margin:10px 0 0;padding-left:18px;font-size:var(--fs-sm)}
+.kw li{margin-bottom:8px}
+.kw li:last-child{margin-bottom:0}
+.kw li em{display:block;font-style:normal;color:var(--mute)}
+@media (max-width:760px){.kwbox{padding:18px}}

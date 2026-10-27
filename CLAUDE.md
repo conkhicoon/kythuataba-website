@@ -35,7 +35,6 @@ Website tĩnh HTML/CSS/JS thuần, không build. **Một trang dài** (`public/i
 ## Triển khai
 - Repo GitHub: `conkhicoon/kythuataba-website` (public). Cloudflare đã nối repo, **tự deploy khi có commit lên nhánh main**.
 - Dự án dạng **Workers (static assets)**, không phải Pages. Thư mục xuất bản là `public`. Địa chỉ thử: `https://kythuataba-website.ngochung-ktaba.workers.dev`.
-- Ngày 27/10/2026: bản web một trang dài đã được đưa lên nhánh `main` (commit "Dựng lại website thành một trang dài…"). Cần kiểm tra lại web thử trên workers.dev và các địa chỉ chuyển hướng `_redirects`.
 - Chưa gắn tên miền. Kế hoạch: thêm kythuataba.vn vào Cloudflare, đổi nameserver ở VNPT sang Cloudflare, xóa bản ghi A/CNAME cũ trỏ vào hosting WordPress, rồi Settings → Domains & Routes → Add → Custom Domain cho `kythuataba.vn` và `www`. **Trước khi gắn tên miền phải sao lưu WordPress.**
 - `_headers` đặt ảnh `immutable` 1 năm: khi đổi ảnh **phải đổi tên file** (không ghi đè cùng tên), nếu không khách cũ vẫn thấy ảnh cũ.
 - README.md còn ghi "Cloudflare Pages" và cấu trúc nhiều trang, cần sửa lại khi đưa lên.
