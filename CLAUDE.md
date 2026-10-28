@@ -38,7 +38,8 @@ Website tĩnh HTML/CSS/JS thuần, không build. **Một trang dài** (`public/i
 - Repo GitHub: `conkhicoon/kythuataba-website` (public). Cloudflare đã nối repo, **tự deploy khi có commit lên nhánh main**.
 - Dự án dạng **Workers (static assets)**, không phải Pages. Thư mục xuất bản là `public`. Địa chỉ thử: `https://kythuataba-website.ngochung-ktaba.workers.dev`.
 - Ngày 27/10/2026: web một trang dài đã đưa lên nhánh `main` (đợt 1 dựng lại toàn bộ, đợt 2 cập nhật Từ khóa, Liên hệ). Cần kiểm tra lại web thử trên workers.dev và các địa chỉ chuyển hướng `_redirects`.
-- Chưa gắn tên miền. Kế hoạch: thêm kythuataba.vn vào Cloudflare, đổi nameserver ở VNPT sang Cloudflare, xóa bản ghi A/CNAME cũ trỏ vào hosting WordPress, rồi Settings → Domains & Routes → Add → Custom Domain cho `kythuataba.vn` và `www`. **Trước khi gắn tên miền phải sao lưu WordPress.**
+- Ngày 28/10/2026: **đã gắn tên miền** `kythuataba.vn` và `www.kythuataba.vn` (Custom Domain trong Workers, mục Domains). Nameserver đã đổi từ VNPT (ns1/ns2.vdconline.vn) sang Cloudflare (`jerry.ns.cloudflare.com`, `kenia.ns.cloudflare.com`); web hiển thị bình thường. Đã xóa 2 bản ghi A trỏ vào hosting WordPress cũ. Giữ bản ghi email Yandex (MX, SPF, DKIM, DMARC, CNAME `mail` ở chế độ DNS only) dù chủ web không dùng email tên miền.
+- **Chủ web chưa sao lưu WordPress**: tuyệt đối không hủy hosting cũ khi chưa tải dữ liệu (file web + cơ sở dữ liệu, có danh sách sản phẩm WooCommerce) và nhờ nhà cung cấp dọn mã độc cờ bạc.
 - `_headers` đặt ảnh `immutable` 1 năm: khi đổi ảnh **phải đổi tên file** (không ghi đè cùng tên), nếu không khách cũ vẫn thấy ảnh cũ.
 - README.md còn ghi "Cloudflare Pages" và cấu trúc nhiều trang, cần sửa lại khi đưa lên.
 
